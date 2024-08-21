@@ -1,0 +1,62 @@
+.container{
+    margin-top: 5px !important;
+    text-align: center !important;
+}
+
+.no__bullets{
+  list-style-type: none;
+}
+
+.password__input{
+  border: none;
+  outline: none;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255); /* Set the text color */
+  padding: 4px; /* Add padding for better appearance */
+  border-radius: 2px; 
+  font-weight: bold;
+}
+
+button{
+  margin-top: 5px;
+  border: none;
+}
+
+.total-price{
+  text-align: right;
+  padding: 15px;
+  margin-top: 50px;
+}
+
+h2{
+  font-weight: bolder;
+}
+
+/* Home.css */
+.custom-padding {
+  padding-left: 2rem; /* Adjust as needed */
+  padding-right: 2rem; /* Adjust as needed */
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.figure-no-border {
+  margin: 0;
+  padding: 0;
+}
+.figure-img {
+  display: block;
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
