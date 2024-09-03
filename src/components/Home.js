@@ -4,11 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Figure } from 'react-bootstrap';
 import Logo from './images/Logo.png';
 import profile from './images/profile.jpg';
-import TotalPrice from './totalPrice';
-import HeaderIMG12 from './images/HeaderIMG12.jpg';
-import HeaderIMG13 from './images/HeaderIMG13.jpeg';
+import HeaderIMG12 from './images/ce95c48727700e1092af6658889b1f49_1600x.webp';
+import HeaderIMG13 from './images/WomensAutumn_revisededit_-final12.jpg';
 import HeaderIMG15 from './images/HeaderIMG15.jpeg';
-import HeaderIMG16 from './images/HeaderIMG16.jpg';
+import HeaderIMG16 from './images/Gym_-_Kayla_-_7108-1024x683-27c3a53.jpg';
 import HomeIMG1 from './images/HomeIMG1.jpg';
 import HomeIMG2 from './images/HomeIMG2.jpg';
 
@@ -48,56 +47,52 @@ function Home() {
 
   return (
     <div className='container'>
-      <div className='total-price'>
-        <TotalPrice />
-      </div>
-      <div className="row no-gutters">
+      <div className="image_grid">
         <h2>Home</h2>
-        <div className="col-7 col-md-3">
+        <div className="item1">
           <Figure className="figure-no-border">
             <Figure.Image
               src={HeaderIMG12}
               alt="Image 3"
-              className="img-custom img1"
+              className='image1'
             />
           </Figure>
         </div>
-        <div className="col-6 col-md-3">
+        <div className="item2">
           <Figure className="figure-no-border">
             <Figure.Image
               src={HeaderIMG13}
               alt="Image 4"
-              className="img-custom img2"
+              className='image2'
             />
           </Figure>
         </div>
-        <div className="col-6 col-md-3">
+        <div className="item3">
           <Figure className="figure-no-border">
             <Figure.Image
               src={HeaderIMG15}
               alt="Image 4"
-              className="img-custom img3"
+              className='image3'
             />
           </Figure>
         </div>
-        <div className="col-6 col-md-3">
+        <div className="item4">
           <Figure className="figure-no-border">
             <Figure.Image
               src={HeaderIMG16}
               alt="Image 4"
-              className="img-custom img3"
+              className='image4'
             />
           </Figure>
         </div>
       </div>
       <div>
-      <Figure className="col-2 md-2">
+      <Figure className="image5">
         <Figure.Image
           width={90}
           height={95}
           alt="profile"
           src={profile}
-          className="mb-4"
         />
       </Figure>
         {isAuthenticated ? (
