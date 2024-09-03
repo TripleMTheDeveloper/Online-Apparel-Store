@@ -1,43 +1,60 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
 .App {
   text-align: center;
 }
 
 .nav__bar{
-  background-color: #ffffff;
-color: white;
-padding: 10px 20px;
+  background-color: #e6e6e6;
+  position: fixed;
+  color: white;
+  gap: 900px;
+  padding: 10px 10px;
+  z-index: 1;
+  display: grid; /* Change to grid display */
+  grid-template-columns: repeat(4, 1fr); /* Create 4 equal-width columns */
+  top: 0;
 }
 
-nav{
-  text-decoration: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-right: 100px;
-}
-
-.links {
-  display: flex;
+.nav__links{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
   list-style-type: none;
-}
-
-.links a {
-  color: white;
+  margin: 0;
+  padding: 10pxs;
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  padding: 8px 16px;
-  border-radius: 5px;
-  margin: 0 5px;
-  background-color: #000000;
-  text-decoration: none !important;
+  font-size: 35px;
 }
 
-.links a:hover {
-  background-color: #000000;
+.home_link{
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 10px;
 }
 
-button{
+.about_link{
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.products_link{
+  color: black;
+  text-decoration: none;
+  list-style-type: none;
+  padding: 10px;
+}
+
+.home_header{
   border-radius: 5px;
-  background-color: black;
-  color: white;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
   padding: 10px;
 }
