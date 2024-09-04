@@ -32,59 +32,33 @@ h2{
   margin-left: 0;
 }
 
-.image_grid{
+/* Container for the grid */
+.image-grid {
   display: grid;
-  grid-template-columns: repeat(13, 1fr);
-  grid-template-rows: repeat(13, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(2, 1fr); /* Two columns, equal width */
+  gap: 10px; /* Space between grid items */
+  margin-bottom: 20px; /* Space below the grid */
 }
 
-.item1 {
-  grid-column: 1 / 9; /* Start at column line 1, end at column line 6 */
-  grid-row: 1 / 6;    /* Start at row line 1, end at row line 6 */
+/* Style for each grid item */
+.image-grid .item {
+  position: relative; /* Position relative for absolute positioning of image if needed */
+  overflow: hidden; /* Hide overflow content */
 }
 
-.item2 {
-  grid-column: 9 / 14; /* Start at column line 6, end at column line 11 */
-  grid-row: 1 / 6;     /* Start at row line 1, end at row line 6 */
-}
-
-.item3 {
-  grid-column: 1 / 6; /* Start at column line 1, end at column line 6 */
-  grid-row: 6 / 11;   /* Start at row line 6, end at row line 11 */
-}
-
-.item4 {
-  grid-column: 6 / 11; /* Start at column line 6, end at column line 11 */
-  grid-row: 6 / 11;    /* Start at row line 6, end at row line 11 */
-}
-
-.figure-no-border {
-  margin: 0;
-  padding: 0;
-  
-}
-
-.image1{
-  border-radius: 5%;
-}
-
-.image2{
-  border-radius: 5%;
-}
-
-.image3{
-  border-radius: 5%;
-}
-
-
-.image4{
-  border-radius: 5%;
+.image-grid .item img {
+  width: 100%; /* Make image fill the container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove default spacing */
 }
 
 .figure-img {
   display: block;
   width: 100%;
   height: auto; /* Maintain aspect ratio */
+}
+
+.header-img{
+  height: 500px;
 }
 
