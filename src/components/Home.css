@@ -1,64 +1,23 @@
 .container{
     margin-top: 100px !important;
     text-align: center !important;
+    font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
-.no__bullets{
-  list-style-type: none;
+.image-box {
+  display: flex;
+  flex-wrap: wrap; /* Allow the images to wrap to the next line */
+  justify-content: center; /* Center the images within the container */
+  gap: 10px; /* Add some space between the images */
 }
 
-.password__input{
-  border: none;
-  outline: none;
-  border: none;
-  outline: none;
-  color: rgb(255, 255, 255); /* Set the text color */
-  padding: 4px; /* Add padding for better appearance */
-  border-radius: 2px; 
-  font-weight: bold;
+.image-box img {
+  width: calc(50% - 10px); /* Take up 50% of the container's width, minus the gap */
+  object-fit: cover; /* Ensure the image covers the space without distorting */
+  height: 500px; /* Set a fixed height for the images */
 }
 
-button{
-  margin-top: 5px;
-  border: none;
-}
 
-h2{
-  font-weight: bolder;
-}
-
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-/* Container for the grid */
-.image-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns, equal width */
-  gap: 10px; /* Space between grid items */
-  margin-bottom: 20px; /* Space below the grid */
-}
-
-/* Style for each grid item */
-.image-grid .item {
-  position: relative; /* Position relative for absolute positioning of image if needed */
-  overflow: hidden; /* Hide overflow content */
-}
-
-.image-grid .item img {
-  width: 100%; /* Make image fill the container */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove default spacing */
-}
-
-.figure-img {
-  display: block;
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
-}
-
-.header-img{
-  height: 500px;
-}
 
