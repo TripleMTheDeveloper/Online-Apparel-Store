@@ -2,15 +2,23 @@
     margin-top: 100px !important;
     text-align: center !important;
     font-family: "Fira Sans Condensed", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
+    font-weight: 100;
+    font-style: normal;
+  }
 
 .image-box {
   display: flex;
   flex-wrap: wrap; /* Allow the images to wrap to the next line */
   justify-content: center; /* Center the images within the container */
   gap: 10px; /* Add some space between the images */
+  padding: 10px 0px;
+}
+
+.image-box2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 10px;
 }
 
 .image-box img {
@@ -19,5 +27,107 @@
   height: 500px; /* Set a fixed height for the images */
 }
 
+.image-box2 img {
+  width: calc(50% - 10px); /* Take up 50% of the container's width, minus the gap */
+  object-fit: cover; /* Ensure the image covers the space without distorting */
+  height: 500px; /* Set a fixed height for the images */
+}
 
+.image-text1{
+  position: absolute;
+  left: 560px;
+  top: 550px;
+  color: white;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: BOLD;
+  font-style: normal;
+  font-size: 50PX;
+}
+
+.image-text2{
+  position: absolute;
+  left: 1540px;
+  top: 550px;
+  color: white;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: BOLD;
+  font-style: normal;
+  font-size: 50PX;
+}
+
+.image-text3{
+  position: absolute;
+  left: 560px;
+  top: 1050px;
+  color: white;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: BOLD;
+  font-style: normal;
+  font-size: 50PX;
+}
+
+.image-text4{
+  position: absolute;
+  left: 890px;
+  top: 1050px;
+  color: azure;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: BOLD;
+  font-style: normal;
+  font-size: 50PX;
+}
+
+.img-1{
+  flex: 3;
+  border-radius: 1%;
+}
+
+.img-2{
+  flex: 1;
+  border-radius: 1%;
+}
+
+.img-3{
+  flex: 1;
+  border-radius: 1%;
+}
+
+.img-4{
+  flex: 3;
+  border-radius: 1%;
+}
+
+.new-items-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  padding: 80px 10px;
+  gap: 10px;
+}
+
+.new-items-box img {
+  width: calc(50% - 10px); /* Take up 50% of the container's width, minus the gap */
+  object-fit: cover; /* Ensure the image covers the space without distorting */
+  height: 500px; /* Set a fixed height for the images */
+}
+
+.new-item{
+  flex: 1;
+  border-radius: 1%;
+}
+
+.new-item2{
+  flex: 1;
+  border-radius: 1%;
+}
+
+.new-item3{
+  flex: 1;
+  border-radius: 1%;
+}
+
+.new-item4{
+  flex: 1;
+  border-radius: 1%;
+}
 

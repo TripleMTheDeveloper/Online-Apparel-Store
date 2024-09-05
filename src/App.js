@@ -6,6 +6,7 @@ import About from './components/About';
 import './App.css';
 import { CartProvider } from './components/totalPrice'; 
 import { useState } from 'react';
+import Logo from './components/images/Untitled_Design__36_-removebg-preview.png';
 
 function App() { //rending all our components
 
@@ -20,7 +21,7 @@ function App() { //rending all our components
       <CartProvider>  {/*Wrapping the entire app in CartProvider context so I can display the cart price in all components*/}
         <div className="App">
           <nav className='nav__bar'>
-            <h2 className='home_header'>Flux</h2>
+            <img className='logo' src={Logo} alt="My image description" />
             <ul className='nav__links'>
               <li ><Link to="/" className='home_link'>Home</Link></li>
               <li ><Link to="/about" className='about_link'>About</Link></li>
