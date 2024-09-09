@@ -4,7 +4,38 @@
     font-family: "Fira Sans Condensed", sans-serif;
     font-weight: 100;
     font-style: normal;
-  }
+}
+
+.section-3{
+  background-image: url('./images/Untitled\ Design\(28\).png');
+  height: 500px;
+}
+
+.section-3-header{
+  text-align: left;
+}
+
+.shop-now-button{
+  background-color: rgb(0, 0, 0);
+  color: azure;
+  border: none;
+  border-radius: 5%;
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.section-header{
+  font-size: 100px;
+  text-align: left;
+  padding: 90px 50px 10px;
+}
+
+.custom-line{
+  color: blueviolet;
+}
 
 .image-box {
   display: flex;
@@ -97,7 +128,7 @@
   border-radius: 1%;
 }
 
-.new-items-box {
+.new-items-box{
   display: flex;
   flex-wrap: wrap;
   justify-content: center; 
@@ -127,6 +158,74 @@
 }
 
 .new-item4{
+  flex: 1;
+  border-radius: 1%;
+}
+
+.new-shoes-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  padding: 80px 10px;
+  gap: 10px;
+}
+
+.new-shoes-box img{
+  width: calc(50% - 10px); /* Take up 50% of the container's width, minus the gap */
+  object-fit: cover; /* Ensure the image covers the space without distorting */
+  height: 450px; /* Set a fixed height for the images */
+}
+
+.shoes{
+  flex: 1;
+  border-radius: 1%;
+}
+
+.shoes2{
+  flex: 1;
+  border-radius: 1%;
+}
+
+.shoes3{
+  flex: 1;
+  border-radius: 1%;
+}
+
+.shoes4{
+  flex: 1;
+  border-radius: 1%;
+}
+
+.new-socks-box{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  padding: 80px 10px;
+  gap: 10px;
+}
+
+.new-socks-box img{
+  width: calc(50% - 10px); /* Take up 50% of the container's width, minus the gap */
+  object-fit: cover; /* Ensure the image covers the space without distorting */
+  height: 450px; /* Set a fixed height for the images */
+}
+
+.socks{
+  flex: 1;
+  border-radius: 1%;
+}
+
+.socks2{
+  flex: 1;
+  border-radius: 1%;
+}
+
+.socks3{
+  flex: 1;
+  border-radius: 1%;
+}
+
+.socks4{
   flex: 1;
   border-radius: 1%;
 }
