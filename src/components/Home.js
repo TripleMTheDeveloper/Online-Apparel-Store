@@ -1,4 +1,5 @@
 import './Home.css';
+import {Link} from 'react-router-dom';
 import HeaderIMG13 from './images/TRAININGOVERSIZEDT-SHIRTBlackB1A7M-BBBB8842_3840x.webp';
 import HeaderIMG10 from './images/HeaderIMG10.jpg';
 import HeaderIMG16 from './images/amm09934_black_xl_3.webp';
@@ -26,13 +27,13 @@ function Home() {
           <img className='img-1' src={HeaderIMG10} alt="alt" />
           <span className='image-text1'>Featured</span>
           <img className='img-2' src={HeaderIMG13} alt="alt" />
-          <span className='image-text2'>Women</span>
+          <Link to="/Womens"><span className='image-text2'>Women</span></Link>
         </div>
         <div className='image-box2'>
           <img className='img-3' src={HeaderIMG16} alt="alt" />
-          <span className='image-text3'>Mens</span>
+          <Link to="/Mens"><span className='image-text3'>Mens</span></Link>
           <img className='img-4' src={HomeIMG2} alt="alt" />
-          <span className='image-text4'>Gym Equipment</span>
+          <Link to="/Gym"><span className='image-text4'>Gym Equipment</span></Link>
         </div>
       </div>
       <hr className='custom-line'></hr>
@@ -45,8 +46,7 @@ function Home() {
       </div>
       <hr className='custom-line'></hr>
       <div className='section-3'>
-        <h1 className='section-3-header'>Shop Now</h1>
-        <button className='shop-now-button'>Shop Now</button>
+        <Link to="/Products" ><button className='shop-now-button'>Shop Now</button></Link>
       </div>
       <hr className='custom-line'></hr>
       <h1 className='section-header'>Running Shoes</h1>

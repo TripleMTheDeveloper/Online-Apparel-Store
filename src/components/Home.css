@@ -9,22 +9,25 @@
 .section-3{
   background-image: url('./images/Untitled\ Design\(28\).png');
   height: 500px;
-}
-
-.section-3-header{
-  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .shop-now-button{
-  background-color: rgb(0, 0, 0);
-  color: azure;
-  border: none;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: rgb(255, 255, 255);
   border-radius: 5%;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 30px;
   padding: 10px;
+}
+
+.shop-now-button:hover{
+  color: rgb(0, 0, 0);
 }
 
 .section-header{
@@ -34,7 +37,7 @@
 }
 
 .custom-line{
-  color: blueviolet;
+  color: rgb(0, 0, 0);
 }
 
 .image-box {
@@ -66,18 +69,22 @@
 
 .image-text1{
   position: absolute;
-  left: 560px;
+  left: 315px;
   top: 550px;
   color: white;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: BOLD;
   font-style: normal;
   font-size: 50PX;
+}
+
+.image-text1:hover{
+  color: rgb(0, 0, 0);
 }
 
 .image-text2{
   position: absolute;
-  left: 1540px;
+  left: 1300px;
   top: 550px;
   color: white;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -86,9 +93,13 @@
   font-size: 50PX;
 }
 
+.image-text2:hover{
+  color: rgb(0, 0, 0);
+}
+
 .image-text3{
   position: absolute;
-  left: 560px;
+  left: 315px;
   top: 1050px;
   color: white;
   font-family: "Fira Sans Condensed", sans-serif;
@@ -97,15 +108,23 @@
   font-size: 50PX;
 }
 
+.image-text3:hover{
+  color: rgb(0, 0, 0);
+}
+
 .image-text4{
   position: absolute;
-  left: 890px;
+  left: 650px;
   top: 1050px;
   color: azure;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: BOLD;
   font-style: normal;
   font-size: 50PX;
+}
+
+.image-text4:hover{
+  color: rgb(0, 0, 0);
 }
 
 .img-1{
@@ -229,4 +248,5 @@
   flex: 1;
   border-radius: 1%;
 }
+
 

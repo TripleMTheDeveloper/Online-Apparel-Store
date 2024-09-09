@@ -21,7 +21,7 @@ import './product.css';
 import { CartContext } from './totalPrice';
 import TotalPrice from './totalPrice';
 
-function Womens() {
+function Products() {
   const { addToCart } = useContext(CartContext); // Access addToCart function from CartContext
   const [selectedColors, setSelectedColors] = useState({});
 
@@ -185,4 +185,4 @@ function Womens() {
   );
 }
 
-export default Womens;
+export default Products;
