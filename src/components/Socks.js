@@ -101,60 +101,8 @@ function Socks() {
     },
   ];
 
-  // Array of color options
-  const colorOptions = ['Black', 'Blue', 'Green', 'Red', 'White'];
-
-  const handleColorSelect = (index, color) => {
-    setSelectedColors(prevColors => ({
-      ...prevColors,
-      [index]: color
-    }));
-  };
-
   return (
     <div className="container">
-      <div className="row no-gutters">
-        <h2>Products</h2>
-        <div className="col-6 col-md-3">
-          <Figure className="figure">
-            <Figure.Image
-              src={HeaderIMG6}
-              alt="Image 2"
-              className="figure-img img-fluid"
-            />
-          </Figure>
-        </div>
-        <div className="col-6 col-md-3">
-          <Figure className="figure">
-            <Figure.Image
-              src={HeaderIMG4}
-              alt="Image 3"
-              className="figure-img img-fluid"
-            />
-          </Figure>
-        </div>
-        <div className="col-6 col-md-3">
-          <Figure className="figure">
-            <Figure.Image
-              src={HeaderIMG5}
-              alt="Image 4"
-              className="figure-img img-fluid"
-            />
-          </Figure>
-        </div>
-        <div className="col-6 col-md-3">
-          <Figure className="figure">
-            <Figure.Image
-              src={HeaderIMG7}
-              alt="Image 4"
-              className="figure-img img-fluid"
-            />
-          </Figure>
-        </div>
-      </div>
-      <div className='total-price'>
-        <TotalPrice /> {/* Display total price */}
-      </div>
       <div className='row no-gutters'>
           {productData.map((product, index) => (
               <div key={index} className="col-6 col-md-3 mb-3">
@@ -164,16 +112,6 @@ function Socks() {
                     <Card.Title>{product.name}</Card.Title>
                     <Card.Text>{product.description}</Card.Text>
                     <Card.Text>Price: R{product.price ? product.price.toFixed(2) : ''}</Card.Text>
-                    <DropdownButton as={ButtonGroup} title={selectedColors[index] || "Select Color"}
-                    style={{ color: selectedColors[index] || 'black' }} // Apply selected color to button text
-                    >
-                      {colorOptions.map((color, idx) => (
-                        <Dropdown.Item key={idx}  onClick={() => handleColorSelect(index, color)}
-                        >
-                          {color}
-                          </Dropdown.Item>
-                      ))}
-                    </DropdownButton>
                     <Button className='btn-custom' onClick={() => addToCart(product)}>Buy</Button>
                   </Card.Body>
                 </Card>
