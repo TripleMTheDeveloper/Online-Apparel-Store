@@ -112,7 +112,7 @@ function Womens() {
   };
 
   return (
-    <div className="row">
+    <div className="container">
       <div className="row no-gutters">
         <h2>Products</h2>
         <div className="col-6 col-md-3">

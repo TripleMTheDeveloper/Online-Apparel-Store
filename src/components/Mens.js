@@ -112,7 +112,7 @@ function Mens() {
   };
 
   return (
-    <div className="row">
+    <div className="container">
       <div className="row no-gutters">
         <h2>Products</h2>
         <div className="col-6 col-md-3">
@@ -158,7 +158,7 @@ function Mens() {
       <div className='row no-gutters'>
           {productData.map((product, index) => (
               <div key={index} className="col-6 col-md-3 mb-3">
-                <Card>
+                <Card className=''>
                   <Card.Img className='product-image' variant="top" src={product.image} alt={product.name} />
                   <Card.Body>
                     <Card.Title>{product.name}</Card.Title>

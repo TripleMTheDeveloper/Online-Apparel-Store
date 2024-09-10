@@ -8,14 +8,10 @@ import NewItem from './images/media.boohoo.webp';
 import NewItem2 from './images/media.boohoo2.webp';
 import NewItem3 from './images/TRAININGOVERSIZEDT-SHIRTBlackB1A7M-BBBB8842_3840x.webp';
 import NewItem4 from './images/IronworksOversizedT-ShirtGSBlackB8A1P-BB2J-0235_b6be8b68-92b0-4fd4-b2d5-0039313d9fb1_3840x.webp';
-import Shoes from './images/revolution.png';
-import Shoes2 from './images/revolution2.jpg';
-import Shoes3 from './images/revolution3.jpg';
-import Shoes4 from './images/revolution4.jpg';
-import Socks from './images/WhtBlkSockShopify2.webp';
-import Socks2 from './images/CT_LogoSocks_white_2048x2048.webp';
-import Socks3 from './images/e6fc50c_large.jpg';
-import Socks4 from './images/WhiteSocks.webp';
+import Item from './images/revolution.png';
+import Item2 from './images/2710_grande.jpg';
+import Item3 from './images/tpe-yoga-mat-fy1003.jpg';
+import Item4 from './images/WhiteSocks.webp';
 
 function Home() {
 
@@ -49,22 +45,21 @@ function Home() {
         <Link to="/Products" ><button className='shop-now-button'>Shop Now</button></Link>
       </div>
       <hr className='custom-line'></hr>
-      <h1 className='section-header'>Running Shoes</h1>
-      <div className='new-shoes-box'>
-        <img className='shoes' src={Shoes} alt="alt" />
-        <img className='shoes2' src={Shoes2} alt="alt" />
-        <img className='shoes3' src={Shoes3} alt="alt" />
-        <img className='shoes4' src={Shoes4} alt="alt" />
+      <h1 className='section-header'>Other Catagories</h1>
+      <div className='items-box'>
+        <img className='item' src={Item} alt="alt" />
+        <Link to="/Shoes"><span className='item-image-text'>Shoes</span></Link>
+        <img className='item2' src={Item2} alt="alt" />
+        <Link to="/Accessories"><span className='item-image-text2'>Accessories</span></Link>
+        <img className='item3' src={Item3} alt="alt" />
+        <Link to="/Gym"><span className='item-image-text3'>Equipment</span></Link>
+        <img className='item4' src={Item4} alt="alt" />
+        <Link to="/Socks"><span className='item-image-text4'>Socks</span></Link>
       </div>
-      <hr className='custom-line'></hr>
-      <h1 className='section-header'>Socks</h1>
-      <div className='new-socks-box'>
-        <img className='socks' src={Socks} alt="alt" />
-        <img className='socks2' src={Socks2} alt="alt" />
-        <img className='socks3' src={Socks3} alt="alt" />
-        <img className='socks4' src={Socks4} alt="alt" />
+      <hr></hr>
+      <div className='contact-box'>
+        <h2>contact us</h2>
       </div>
-      <hr className='custom-line'></hr>
     </div>
   );
 }

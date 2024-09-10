@@ -21,7 +21,7 @@ import './product.css';
 import { CartContext } from './totalPrice';
 import TotalPrice from './totalPrice';
 
-function Products() {
+function Socks() {
   const { addToCart } = useContext(CartContext); // Access addToCart function from CartContext
   const [selectedColors, setSelectedColors] = useState({});
 
@@ -112,7 +112,7 @@ function Products() {
   };
 
   return (
-    <div className="row">
+    <div className="container">
       <div className="row no-gutters">
         <h2>Products</h2>
         <div className="col-6 col-md-3">
@@ -185,4 +185,4 @@ function Products() {
   );
 }
 
-export default Products;
+export default Socks;

@@ -27,7 +27,7 @@
 }
 
 .shop-now-button:hover{
-  color: rgb(0, 0, 0);
+  color: rgb(76, 199, 142);
 }
 
 .section-header{
@@ -79,7 +79,7 @@
 }
 
 .image-text1:hover{
-  color: rgb(0, 0, 0);
+  color: rgb(76, 199, 142);
 }
 
 .image-text2{
@@ -94,7 +94,7 @@
 }
 
 .image-text2:hover{
-  color: rgb(0, 0, 0);
+  color: rgb(76, 199, 142);
 }
 
 .image-text3{
@@ -109,7 +109,7 @@
 }
 
 .image-text3:hover{
-  color: rgb(0, 0, 0);
+  color: rgb(76, 199, 142);
 }
 
 .image-text4{
@@ -124,7 +124,7 @@
 }
 
 .image-text4:hover{
-  color: rgb(0, 0, 0);
+  color: rgb(76, 199, 142);
 }
 
 .img-1{
@@ -181,7 +181,7 @@
   border-radius: 1%;
 }
 
-.new-shoes-box{
+.items-box{
   display: flex;
   flex-wrap: wrap;
   justify-content: center; 
@@ -189,64 +189,106 @@
   gap: 10px;
 }
 
-.new-shoes-box img{
+.items-box img{
   width: calc(50% - 10px); /* Take up 50% of the container's width, minus the gap */
   object-fit: cover; /* Ensure the image covers the space without distorting */
   height: 450px; /* Set a fixed height for the images */
 }
 
-.shoes{
+.item{
   flex: 1;
   border-radius: 1%;
 }
 
-.shoes2{
+.item2{
   flex: 1;
   border-radius: 1%;
 }
 
-.shoes3{
+.item3{
   flex: 1;
   border-radius: 1%;
 }
 
-.shoes4{
+.item4{
   flex: 1;
   border-radius: 1%;
 }
 
-.new-socks-box{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
-  padding: 80px 10px;
-  gap: 10px;
+.item-image-text {
+  position: absolute;
+  font-size: 35px;
+  top: 3300px; /* Position the text 10px from the bottom */
+  left: 320px; /* Position the text 10px from the left */
+  color: rgb(0, 0, 0); /* White text color for visibility */
+  padding: 5px 10px; /* Add some padding around the text */
+  border-radius: 3px; /* Slightly round the corners of the text box */
+  text-decoration: none; /* Remove the underline from the link */
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: BOLD;
+  font-style: normal;
 }
 
-.new-socks-box img{
-  width: calc(50% - 10px); /* Take up 50% of the container's width, minus the gap */
-  object-fit: cover; /* Ensure the image covers the space without distorting */
-  height: 450px; /* Set a fixed height for the images */
+.item-image-text:hover {
+  color: rgb(76, 199, 142);
 }
 
-.socks{
-  flex: 1;
-  border-radius: 1%;
+.item-image-text2 {
+  position: absolute;
+  font-size: 35px;
+  top: 3300px; /* Position the text 10px from the bottom */
+  left: 630px; /* Position the text 10px from the left */
+  color: rgb(0, 0, 0); /* White text color for visibility */
+  padding: 5px 10px; /* Add some padding around the text */
+  border-radius: 3px; /* Slightly round the corners of the text box */
+  text-decoration: none; /* Remove the underline from the link */
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: BOLD;
+  font-style: normal;
 }
 
-.socks2{
-  flex: 1;
-  border-radius: 1%;
+.item-image-text2:hover {
+  color: rgb(76, 199, 142);
 }
 
-.socks3{
-  flex: 1;
-  border-radius: 1%;
+.item-image-text3 {
+  position: absolute;
+  font-size: 35px;
+  top: 3300px; /* Position the text 10px from the bottom */
+  left: 950px; /* Position the text 10px from the left */
+  color: rgb(0, 0, 0); /* White text color for visibility */
+  padding: 5px 10px; /* Add some padding around the text */
+  border-radius: 3px; /* Slightly round the corners of the text box */
+  text-decoration: none; /* Remove the underline from the link */
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: BOLD;
+  font-style: normal;
 }
 
-.socks4{
-  flex: 1;
-  border-radius: 1%;
+.item-image-text3:hover {
+  color: rgb(76, 199, 142);
+}
+
+.item-image-text4 {
+  position: absolute;
+  font-size: 35px;
+  top: 3300px; /* Position the text 10px from the bottom */
+  left: 1300px; /* Position the text 10px from the left */
+  color: rgb(0, 0, 0); /* White text color for visibility */
+  padding: 5px 10px; /* Add some padding around the text */
+  border-radius: 3px; /* Slightly round the corners of the text box */
+  text-decoration: none; /* Remove the underline from the link */
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: BOLD;
+  font-style: normal;
+}
+
+.item-image-text4:hover {
+  color: rgb(76, 199, 142);
+}
+
+.contact-box{
+  background-color: rgb(93, 189, 152);
 }
 
 

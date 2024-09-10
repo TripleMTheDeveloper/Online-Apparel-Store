@@ -2,10 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './components/Home';
 import Products from './components/Products';
-import About from './components/About';
 import Mens from './components/Mens';
 import Womens from './components/Womens';
 import Gym from './components/GymEquipment';
+import Accessories from './components/Accessories';
+import Socks from './components/Socks';
+import Shoes from './components/Shoes';
 import './App.css';
 import { CartProvider } from './components/totalPrice'; 
 import { useState } from 'react';
@@ -27,10 +29,9 @@ function App() { //rending all our components
             <img className='logo' src={Logo} alt="My image description" />
             <ul className='nav__links'>
               <li ><Link to="/" className='home_link'>Home</Link></li>
-              <li ><Link to="/About" className='about_link'>About</Link></li>
-              <li ><Link to="/Products" className='products_link'>Products</Link></li>
-              <li ><Link to="/Womens" className='womens_link'>Women's</Link></li>
-              <li ><Link to="/Mens" className='mens_link'>Men's</Link></li>
+              <li ><Link to="/Accessories" className='products_link'>Accessories</Link></li>
+              <li ><Link to="/Womens" className='womens_link'>Women</Link></li>
+              <li ><Link to="/Mens" className='mens_link'>Men</Link></li>
             </ul>
             <input
               type="text"
@@ -43,10 +44,12 @@ function App() { //rending all our components
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Products" element={<Products />} />
-            <Route path="/About" element={<About />} />
             <Route path="/Womens" element={<Womens />} />
             <Route path="/Mens" element={<Mens />} />
             <Route path="/Gym" element={<Gym />} />
+            <Route path="/Accessories" element={<Accessories />} />
+            <Route path="/Socks" element={<Socks />} />
+            <Route path="/Shoes" element={<Shoes />} />
           </Routes>
         </div>
       </CartProvider>
