@@ -16,7 +16,6 @@ import nudeT4 from './images/NudeT5.webp';
 import HeaderIMG1 from "./images/Untitled Design(27).png";
 import './product.css';
 import { CartContext } from './totalPrice';
-import TotalPrice from './totalPrice';
 
 function Products() {
   const { addToCart } = useContext(CartContext); // Access addToCart function from CartContext
