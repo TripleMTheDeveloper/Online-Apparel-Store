@@ -21,7 +21,7 @@ function Home() {
       <div className='section1'>
         <div className='image-box'>
           <img className='img-1' src={HeaderIMG10} alt="alt" />
-          <span className='image-text1'>Featured</span>
+          <Link to="/Products"><span className='image-text1'>Featured</span></Link>
           <img className='img-2' src={HeaderIMG13} alt="alt" />
           <Link to="/Womens"><span className='image-text2'>Women</span></Link>
         </div>

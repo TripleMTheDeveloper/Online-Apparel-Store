@@ -1,18 +1,7 @@
 import React, { useContext, useState} from 'react';
 import { Card, Button, DropdownButton, Dropdown, ButtonGroup, Figure } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import running from './images/running.jpg'; 
-import revolution from './images/revolution.png';
-import revolution2 from './images/revolution2.jpg';
-import revolution3 from './images/revolution3.jpg';
-import revolution4 from './images/revolution4.jpg';
-import revolution5 from './images/revolution5.jpg';
-import running2 from './images/running2.jpg';
-import running3 from './images/running3.jpg';
-import running4 from './images/running4.jpg';
-import running6 from './images/running6.jpg';
-import adidas2 from './images/adidas2.jpg';
-import adidas1 from './images/adidas1.jpg';
+import men from './images/ce95c48727700e1092af6658889b1f49_1600x.webp'; 
 import HeaderIMG1 from "./images/Untitled Design(33).png";
 import './product.css';
 import { CartContext } from './totalPrice';
@@ -28,73 +17,73 @@ function Mens() {
       name: 'Running Shoes',
       description: 'High-quality running shoes for all types of runners.',
       price: 650.99,
-      image: running
+      image: men
     },
     {
       name: 'Running Shoes',
       description: 'High-quality running shoes for all types of runners.',
       price: 999.99,
-      image: revolution
+      image: men
     },
     {
       name: 'Running Shoes',
       description: 'High-quality running shoes for all types of runners.',
       price: 1299.99,
-      image: revolution2
+      image: men
     },
     {
       name: 'Running Shoes',
       description: 'High-quality running shoes for all types of runners.',
       price: 1350.99,
-      image: revolution3
+      image: men
     },
     {
       name: 'Running Shoes',
       description: 'High-quality running shoes for all types of runners.',
       price: 1199.99,
-      image: revolution4
+      image: men
     },
     {
       name: 'Running Shoes',
       description: 'High-quality running shoes for all types of runners.',
       price: 1299.99,
-      image: revolution5
+      image: men
     },
     {
       name: 'Running Shoes',
       description: 'High-quality running shoes for all types of runners.',
       price: 999.99,
-      image: adidas2
+      image: men
     },
     {
       name: 'Running Shoes',
       description: 'High-quality running shoes for all types of runners.',
       price: 1399.99,
-      image: adidas1
+      image: men
     },
     {
       name: 'Running Shoes',
       description: 'High-quality running shoes for all types of runners.',
       price: 750.99,
-      image: running2
+      image: men
     },
     {
       name: 'Running Shoes',
       description: 'High-quality running shoes for all types of runners.',
       price: 849.99,
-      image: running4
+      image: men
     },
     {
       name: 'Running Shoes',
       description: 'High-quality running shoes for all types of runners.',
       price: 1499.99,
-      image: running6
+      image: men
     },
     {
       name: 'Running Shoes',
       description: 'High-quality running shoes for all types of runners.',
       price: 999.99,
-      image: running3
+      image: men
     },
   ];
 

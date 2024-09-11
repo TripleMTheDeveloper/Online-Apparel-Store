@@ -62,6 +62,7 @@ font-family: Arial, Helvetica, sans-serif;
 .no-gutters {
 margin-right: 0;
 margin-left: 0;
+padding: 50px 0px;
 }
 
 .no-gutters > .col,
@@ -87,17 +88,6 @@ margin-left: 5px;
 margin-right: 5px;
 }
 
-
-.no-gutters {
-margin-right: 0;
-margin-left: 0;
-}
-
-.no-gutters > .col,
-.no-gutters > [class*="col-"] {
-padding-right: 0;
-padding-left: 0;
-}
 
 .card-no-border {
 border: none;
@@ -138,6 +128,14 @@ border: none;
   color: azure;
   top: 740px;
   left: 315px;
+}
+
+.section-header{
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 80px;
+  padding: 30px 0px;
 }
 
 
