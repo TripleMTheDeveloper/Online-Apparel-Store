@@ -2,6 +2,9 @@ import React, { useContext, useState} from 'react';
 import { Card, Button, DropdownButton, Dropdown, ButtonGroup, Figure } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import women from './images/fzz39895_black_xl.jpg'; 
+import women2 from './images/fzz39895_black_xl.jpg'; 
+import women3 from './images/media.boohoo2.webp'; 
+import women4 from './images/media.boohoo.webp'; 
 import ladyLeather from './images/LadyLeather.jpg';
 import ladyLeather2 from './images/LadyLeather2.webp';
 import ladyLeather3 from './images/LadyLeather3.webp';
@@ -34,19 +37,19 @@ function Womens() {
       name: 'Black T',
       description: 'High-quality running shoes for all types of runners.',
       price: 999.99,
-      image: women
+      image: women2
     },
     {
       name: 'Black T',
       description: 'High-quality running shoes for all types of runners.',
       price: 1299.99,
-      image: women
+      image: women3
     },
     {
       name: 'Black T',
       description: 'High-quality running shoes for all types of runners.',
       price: 1350.99,
-      image: women
+      image: women4
     },
   ];
 
@@ -132,12 +135,14 @@ function Womens() {
   ];
 
   return (
-    <div className="container">
+    <div>
+      <div className="container">
       <img className='header-image' src={HeaderIMG1} alt='header'/>
       <span className='products-header-text'>Women</span>
       <hr></hr>
-      <div className='row no-gutters'>
-          {productData.map((product, index) => (
+      <div className='row g-6'>
+        <h2 className='section-header'>Urban Girl </h2>
+          {jacketData.map((product, index) => (
               <div key={index} className="col-6 col-md-3 mb-3">
                 <Card>
                   <Card.Img className='product-image' variant="top" src={product.image} alt={product.name} />
@@ -152,8 +157,8 @@ function Womens() {
             ))}
       </div>
       <hr></hr>
-      <div className='row no-gutters'>
-        <h2 className='section-header'>Women's Jackets</h2>
+      <div className='row g-6'>
+        <h2 className='section-header'>Cozy Vibe</h2>
           {winterData.map((product, index) => (
               <div key={index} className="col-6 col-md-3 mb-3">
                 <Card>
@@ -169,8 +174,8 @@ function Womens() {
             ))}
       </div>
       <hr></hr>
-      <div className='row no-gutters'>
-        <h2 className='section-header'>Women's T's</h2>
+      <div className='row g-6'>
+        <h2 className='section-header'>Casual T's</h2>
           {productData.map((product, index) => (
               <div key={index} className="col-6 col-md-3 mb-3">
                 <Card>
@@ -186,8 +191,8 @@ function Womens() {
             ))}
       </div>
       <hr></hr>
-      <div className='row no-gutters'>
-        <h2 className='section-header'>Women's Pants</h2>
+      <div className='row g-6'>
+        <h2 className='section-header'>Jeans</h2>
           {pantsData.map((product, index) => (
               <div key={index} className="col-6 col-md-3 mb-3">
                 <Card>
@@ -201,6 +206,11 @@ function Womens() {
                 </Card>
               </div>
             ))}
+        </div>
+        <hr></hr>
+      </div>
+      <div className='bottom-section'>
+        <h1 className='bottom-header'>TripleM</h1>
       </div>
     </div>
   );

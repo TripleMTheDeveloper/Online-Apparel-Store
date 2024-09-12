@@ -1,5 +1,5 @@
-import React, { useContext, useState} from 'react';
-import { Card, Button, DropdownButton, Dropdown, ButtonGroup, Figure } from 'react-bootstrap';
+import React, { useContext } from 'react';
+import { Card, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import nike from './images/Nike1.webp'; 
 import nike2 from './images/Nike2.webp';
@@ -107,10 +107,11 @@ function Products() {
       <img className='header-image' src={HeaderIMG1} alt='header'/>
       <span className='products-header-text'>Featured</span>
       <hr></hr>
-      <div className='row no-gutters'>
+
+      <div className='row g-3'>
         <h2 className='section-header'>Women's Training Tops</h2>
           {productData.map((product, index) => (
-              <div key={index} className="col-6 col-md-3 mb-3">
+              <div key={index} className="col-6 col-md-3">
                 <Card className='card'>
                   <Card.Img className='product-image' variant="top" src={product.image} alt={product.name} />
                   <Card.Body>
@@ -124,10 +125,11 @@ function Products() {
             ))}
       </div>
       <hr></hr>
-      <div className='row no-gutters'>
+
+      <div className='row g-3'>
         <h2 className='section-header'>Men's T's</h2>
           {whiteTData.map((product, index) => (
-              <div key={index} className="col-6 col-md-3 mb-3">
+              <div key={index} className="col-6 col-md-3">
                 <Card className='card'>
                   <Card.Img className='product-image' variant="top" src={product.image} alt={product.name} />
                   <Card.Body>
@@ -141,10 +143,11 @@ function Products() {
             ))}
       </div>
       <hr></hr>
-      <div className='row no-gutters'>
+
+      <div className='row g-3'>
         <h2 className='section-header'>Women's T's</h2>
           {nudeTData.map((product, index) => (
-              <div key={index} className="col-6 col-md-3 mb-3">
+              <div key={index} className="col-6 col-md-3">
                 <Card className='card'>
                   <Card.Img className='product-image' variant="top" src={product.image} alt={product.name} />
                   <Card.Body>
@@ -163,6 +166,7 @@ function Products() {
 }
 
 export default Products;
+
 
 
 

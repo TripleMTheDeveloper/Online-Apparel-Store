@@ -30,7 +30,7 @@ function Home() {
             <img className='img-3' src={HeaderIMG16} alt="alt" />
             <Link to="/Mens"><span className='image-text3'>Mens</span></Link>
             <img className='img-4' src={HomeIMG2} alt="alt" />
-            <Link to="/Gym"><span className='image-text4'>Gym Equipment</span></Link>
+            <Link to="/Gym"><span className='image-text4'>Equipment</span></Link>
           </div>
         </div>
         <hr className='custom-line'></hr>

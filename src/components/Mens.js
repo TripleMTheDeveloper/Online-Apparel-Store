@@ -2,6 +2,9 @@ import React, { useContext, useState} from 'react';
 import { Card, Button, DropdownButton, Dropdown, ButtonGroup, Figure } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import men from './images/ce95c48727700e1092af6658889b1f49_1600x.webp'; 
+import men2 from './images/amm09934_black_xl_3.webp';
+import men3 from './images/bmm79745_white_xl.webp';
+import men4 from './images/bmm34748_ecru_xl.webp';
 import HeaderIMG1 from "./images/Untitled Design(33).png";
 import './product.css';
 import { CartContext } from './totalPrice';
@@ -14,76 +17,28 @@ function Mens() {
   // Array of product objects
   const productData = [
     {
-      name: 'Running Shoes',
-      description: 'High-quality running shoes for all types of runners.',
+      name: 'Black Jumper',
+      description: 'High-quality Mens jumper',
       price: 650.99,
       image: men
     },
     {
-      name: 'Running Shoes',
-      description: 'High-quality running shoes for all types of runners.',
+      name: 'Black Jumper',
+      description: 'High-quality Mens jumper',
       price: 999.99,
-      image: men
+      image: men2
     },
     {
-      name: 'Running Shoes',
-      description: 'High-quality running shoes for all types of runners.',
+      name: 'Black Jumper',
+      description: 'High-quality Mens jumper',
       price: 1299.99,
-      image: men
+      image: men3
     },
     {
-      name: 'Running Shoes',
-      description: 'High-quality running shoes for all types of runners.',
+      name: 'Black Jumper',
+      description: 'High-quality Mens jumper',
       price: 1350.99,
-      image: men
-    },
-    {
-      name: 'Running Shoes',
-      description: 'High-quality running shoes for all types of runners.',
-      price: 1199.99,
-      image: men
-    },
-    {
-      name: 'Running Shoes',
-      description: 'High-quality running shoes for all types of runners.',
-      price: 1299.99,
-      image: men
-    },
-    {
-      name: 'Running Shoes',
-      description: 'High-quality running shoes for all types of runners.',
-      price: 999.99,
-      image: men
-    },
-    {
-      name: 'Running Shoes',
-      description: 'High-quality running shoes for all types of runners.',
-      price: 1399.99,
-      image: men
-    },
-    {
-      name: 'Running Shoes',
-      description: 'High-quality running shoes for all types of runners.',
-      price: 750.99,
-      image: men
-    },
-    {
-      name: 'Running Shoes',
-      description: 'High-quality running shoes for all types of runners.',
-      price: 849.99,
-      image: men
-    },
-    {
-      name: 'Running Shoes',
-      description: 'High-quality running shoes for all types of runners.',
-      price: 1499.99,
-      image: men
-    },
-    {
-      name: 'Running Shoes',
-      description: 'High-quality running shoes for all types of runners.',
-      price: 999.99,
-      image: men
+      image: men4
     },
   ];
 
@@ -91,7 +46,10 @@ function Mens() {
     <div className="container">
       <img className='header-image' src={HeaderIMG1} alt='header'/>
       <span className='products-header-text'>Men</span>
-      <div className='row no-gutters'>
+      <hr></hr>
+      <div className='row g-6'>
+        <h2 className='section-header'>Jumper's</h2>
+        <div className='row no-gutters'>
           {productData.map((product, index) => (
               <div key={index} className="col-6 col-md-3 mb-3">
                 <Card className='card'>
@@ -105,8 +63,9 @@ function Mens() {
                 </Card>
               </div>
             ))}
+        </div>
       </div>
-      
+      <hr></hr>
     </div>
   );
 }

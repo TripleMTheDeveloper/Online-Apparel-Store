@@ -11,7 +11,7 @@ import Shoes from './components/Shoes';
 import './App.css';
 import { CartProvider } from './components/totalPrice'; 
 import { useState } from 'react';
-import Logo from './components/images/Untitled_Design__36_-removebg-preview.png';
+import Logo from './components/images/Untitled_Design_34_-removebg-preview.png';
 
 function App() { //rending all our components
 

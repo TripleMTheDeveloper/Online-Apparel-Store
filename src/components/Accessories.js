@@ -5,14 +5,10 @@ import running from './images/61Jys2MzMTS._AC_UF894,1000_QL80_.jpg';
 import revolution from './images/7af3c9bb84a58a3dd3843ed1cdae93606f10c2cf_original.jpeg';
 import revolution2 from './images/2710_grande.jpg';
 import revolution3 from './images/Gray.jpg';
-import revolution4 from './images/61V9z4UsOBL.jpg';
-import revolution5 from './images/revolution5.jpg';
-import running2 from './images/running2.jpg';
-import running3 from './images/running3.jpg';
-import running4 from './images/running4.jpg';
-import running6 from './images/running6.jpg';
-import adidas2 from './images/adidas2.jpg';
-import adidas1 from './images/adidas1.jpg';
+import neck from './images/accessories1.webp';
+import neck2 from './images/accessories2.webp';
+import neck3 from './images/accessories3.webp';
+import neck4 from './images/accessories4.webp';
 import HeaderIMG1 from "./images/Untitled Design(30).png";
 import './product.css';
 import { CartContext } from './totalPrice';
@@ -47,53 +43,32 @@ function Accessories() {
       price: 1350.99,
       image: revolution3
     },
+  ];
+
+  const necklaceData = [
     {
       name: 'Smart Watch',
       description: 'Modern watch and fitness tracker',
-      price: 1199.99,
-      image: revolution3
+      price: 650.99,
+      image: neck
+    },
+    {
+      name: 'Smart Watch',
+      description: 'Modern watch and fitness tracker',
+      price: 999.99,
+      image: neck2
     },
     {
       name: 'Smart Watch',
       description: 'Modern watch and fitness tracker',
       price: 1299.99,
-      image: revolution3
+      image: neck3
     },
     {
       name: 'Smart Watch',
       description: 'Modern watch and fitness tracker',
-      price: 999.99,
-      image: revolution3
-    },
-    {
-      name: 'Smart Watch',
-      description: 'Modern watch and fitness tracker',
-      price: 1399.99,
-      image: revolution3
-    },
-    {
-      name: 'Smart Watch',
-      description: 'Modern watch and fitness tracker',
-      price: 750.99,
-      image: revolution3
-    },
-    {
-      name: 'Smart Watch',
-      description: 'Modern watch and fitness tracker',
-      price: 849.99,
-      image: revolution3
-    },
-    {
-      name: 'Running Shoes',
-      description: 'Modern watch and fitness tracker',
-      price: 1499.99,
-      image: revolution3
-    },
-    {
-      name: 'Smart Watch',
-      description: 'Modern watch and fitness tracker',
-      price: 999.99,
-      image: revolution3
+      price: 1350.99,
+      image: neck4
     },
   ];
 
@@ -101,7 +76,9 @@ function Accessories() {
     <div className="container">
       <img className='header-image' src={HeaderIMG1} alt='header'/>
       <span className='products-header-text'>Accessories</span>
-      <div className='row no-gutters'>
+      <hr></hr>
+      <div className='row g-6'>
+        <h2 className='section-header'>Smart Watches</h2>
           {productData.map((product, index) => (
               <div key={index} className="col-6 col-md-3 mb-3">
                 <Card className='card'>
@@ -116,7 +93,23 @@ function Accessories() {
               </div>
             ))}
       </div>
-      
+      <hr></hr>
+      <div className='row g-6'>
+        <h2 className='section-header'>Nike Necklaces</h2>
+          {necklaceData.map((product, index) => (
+              <div key={index} className="col-6 col-md-3 mb-3">
+                <Card className='card'>
+                  <Card.Img className='product-image' variant="top" src={product.image} alt={product.name} />
+                  <Card.Body>
+                    <Card.Title>{product.name}</Card.Title>
+                    <Card.Text>{product.description}</Card.Text>
+                    <Card.Text>Price: R{product.price ? product.price.toFixed(2) : ''}</Card.Text>
+                    <Button className='btn-custom' onClick={() => addToCart(product)}>Purchase</Button>
+                  </Card.Body>
+                </Card>
+              </div>
+            ))}
+      </div>
     </div>
   );
 }
