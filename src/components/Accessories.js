@@ -9,6 +9,10 @@ import neck from './images/accessories1.webp';
 import neck2 from './images/accessories2.webp';
 import neck3 from './images/accessories3.webp';
 import neck4 from './images/accessories4.webp';
+import gear from './images/accessories5.webp';
+import gear2 from './images/accessories6.webp';
+import gear3 from './images/accessories7.jpg';
+import gear4 from './images/accessories8.webp';
 import HeaderIMG1 from "./images/Untitled Design(30).png";
 import './product.css';
 import { CartContext } from './totalPrice';
@@ -72,8 +76,36 @@ function Accessories() {
     },
   ];
 
+  const gearData = [
+    {
+      name: 'white wrist band',
+      description: 'High quality NIKE sweat gear',
+      price: 650.99,
+      image: gear
+    },
+    {
+      name: 'black wrist band',
+      description: 'High quality NIKE sweat gear',
+      price: 999.99,
+      image: gear2
+    },
+    {
+      name: 'sweat band',
+      description: 'High quality NIKE sweat gear',
+      price: 1299.99,
+      image: gear3
+    },
+    {
+      name: 'sweat band',
+      description: 'High quality NIKE sweat gear',
+      price: 1350.99,
+      image: gear4
+    },
+  ];
+
   return (
-    <div className="container">
+    <div>
+      <div className="container">
       <img className='header-image' src={HeaderIMG1} alt='header'/>
       <span className='products-header-text'>Accessories</span>
       <hr></hr>
@@ -110,6 +142,28 @@ function Accessories() {
               </div>
             ))}
       </div>
+      <hr></hr>
+      <div className='row g-6'>
+        <h2 className='section-header'>Sweat Gear</h2>
+          {gearData.map((product, index) => (
+              <div key={index} className="col-6 col-md-3 mb-3">
+                <Card className='card'>
+                  <Card.Img className='product-image' variant="top" src={product.image} alt={product.name} />
+                  <Card.Body>
+                    <Card.Title>{product.name}</Card.Title>
+                    <Card.Text>{product.description}</Card.Text>
+                    <Card.Text>Price: R{product.price ? product.price.toFixed(2) : ''}</Card.Text>
+                    <Button className='btn-custom' onClick={() => addToCart(product)}>Purchase</Button>
+                  </Card.Body>
+                </Card>
+              </div>
+            ))}
+      </div>
+    </div>
+    <hr></hr>
+        <div className='bottom-section'>
+          <h1 className='bottom-header'>TripleM</h1>
+        </div>
     </div>
   );
 }

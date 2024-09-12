@@ -103,7 +103,8 @@ function Products() {
   ]
 
   return (
-    <div className="container">
+    <div>
+      <div className="container">
       <img className='header-image' src={HeaderIMG1} alt='header'/>
       <span className='products-header-text'>Featured</span>
       <hr></hr>
@@ -161,6 +162,11 @@ function Products() {
             ))}
       </div>
       
+    </div>
+    <hr></hr>
+      <div className='bottom-section'>
+        <h1 className='bottom-header'>TripleM</h1>
+      </div>
     </div>
   );
 }

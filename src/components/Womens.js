@@ -207,8 +207,8 @@ function Womens() {
               </div>
             ))}
         </div>
-        <hr></hr>
       </div>
+      <hr></hr>
       <div className='bottom-section'>
         <h1 className='bottom-header'>TripleM</h1>
       </div>

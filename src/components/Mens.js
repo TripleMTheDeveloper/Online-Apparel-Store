@@ -43,29 +43,35 @@ function Mens() {
   ];
 
   return (
-    <div className="container">
-      <img className='header-image' src={HeaderIMG1} alt='header'/>
-      <span className='products-header-text'>Men</span>
-      <hr></hr>
-      <div className='row g-6'>
-        <h2 className='section-header'>Jumper's</h2>
-        <div className='row no-gutters'>
-          {productData.map((product, index) => (
-              <div key={index} className="col-6 col-md-3 mb-3">
-                <Card className='card'>
-                  <Card.Img className='product-image' variant="top" src={product.image} alt={product.name} />
-                  <Card.Body>
-                    <Card.Title>{product.name}</Card.Title>
-                    <Card.Text>{product.description}</Card.Text>
-                    <Card.Text>Price: R{product.price ? product.price.toFixed(2) : ''}</Card.Text>
-                    <Button className='btn-custom' onClick={() => addToCart(product)}>Purchase</Button>
-                  </Card.Body>
-                </Card>
-              </div>
-            ))}
+    <div>
+      <div className="container">
+        <img className='header-image' src={HeaderIMG1} alt='header'/>
+        <span className='products-header-text'>Men</span>
+        <hr></hr>
+        <div className='row g-6'>
+          <h2 className='section-header'>Jumper's</h2>
+          <div className='row no-gutters'>
+            {productData.map((product, index) => (
+                <div key={index} className="col-6 col-md-3 mb-3">
+                  <Card className='card'>
+                    <Card.Img className='product-image' variant="top" src={product.image} alt={product.name} />
+                    <Card.Body>
+                      <Card.Title>{product.name}</Card.Title>
+                      <Card.Text>{product.description}</Card.Text>
+                      <Card.Text>Price: R{product.price ? product.price.toFixed(2) : ''}</Card.Text>
+                      <Button className='btn-custom' onClick={() => addToCart(product)}>Purchase</Button>
+                    </Card.Body>
+                  </Card>
+                </div>
+              ))}
+          </div>
         </div>
+        <hr></hr>
       </div>
       <hr></hr>
+        <div className='bottom-section'>
+          <h1 className='bottom-header'>TripleM</h1>
+        </div>
     </div>
   );
 }
